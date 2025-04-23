@@ -43,8 +43,14 @@ pip install nodriver
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Connor9994/LinkedIn-Follower-Bot.git
-   cd LinkedIn-Follower-Bot
+   git clone git@github.com:Connor9994/LinkedIn-Follower-Bot.git
+   cd LinkedIn-Follower-Bot/
+   sudo apt install python3-venv -y
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install nodriver
+   google-chrome --user-data-dir=$HOME/code/LinkedIn-Follower-Bot/LinkedInProfile ---> Login to linkedin and keep log in.
+   python LinkedInFollower.py
    ```
 
 2. Modify the paths in the script as necessary for your system. 
